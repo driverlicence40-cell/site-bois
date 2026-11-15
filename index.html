@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Garden State Firewood – Dry Firewood, Delivered</title>
+<meta name="description" content="Dry firewood delivered to your door. Build your order by the stere.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <span><span data-i18n="top_call">Call or text us:</span> <a href="tel:+15512941211">+1 (551) 294-1211</a> (WhatsApp)</span>
+  <span data-i18n="top_yard">Yard: New Jersey</span>
+  <div class="lang notranslate" translate="no" role="group" aria-label="Language">
+    <span class="globe" aria-hidden="true">🌐</span>
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="fr" aria-pressed="false">Français</button>
+    <button type="button" data-lang="es" aria-pressed="false">Español</button>
+    <button type="button" id="other-lang" aria-expanded="false" aria-controls="translate-bar" data-i18n="lang_other">Other language</button>
+  </div>
+</div></div>
+
+<!-- Google Translate fallback bar (hidden until "Other language" is clicked) -->
+<div class="translate-bar" id="translate-bar" hidden>
+  <div class="wrap">
+    <span data-i18n="bar_text">Translate this page into another language:</span>
+    <div id="google_translate_element" class="notranslate"></div>
+    <button type="button" id="bar-close" data-i18n-aria-label="bar_close" aria-label="Close">×</button>
+  </div>
+</div>
+
+<header><div class="wrap">
+  <a class="brand notranslate" href="#accueil" data-i18n-aria-label="brand_aria" aria-label="Home">
+    <!-- LOGO IMAGE -->
+    <img src="logo.jpeg" alt="Superior Firewood Co. Logo" class="logo-img">
+    Garden State Firewood
+  </a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu">
+    <a href="#accueil" data-i18n="nav_home">Home</a>
+    <a href="#galerie" data-i18n="nav_gallery">Gallery</a>
+    <a href="#tarifs" data-i18n="nav_pricing">Pricing</a>
+    <a href="#commande" data-i18n="nav_order">Order</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+</div></header>
+
+<main>
+<!-- HOME SECTION (background image) -->
+<section class="hero" id="accueil" style="background-image: url('fonddecranacceuil.jpeg');">
+  <div class="wrap" >
+    <div class="hero-content">
+      <h1 data-i18n="hero_title">Dry firewood, delivered and stacked at your home.</h1>
+      <p data-i18n="hero_text">Oak, hornbeam and beech, seasoned for at least two years. You choose the species, the log length and the number of steres, and we deliver on the date we agree on.</p>
+      <a class="btn" href="#galerie" data-i18n="hero_btn1">View the gallery</a>
+      <a class="btn ghost" href="#commande" data-i18n="hero_btn2">Build my order</a>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDING GALLERY SECTION -->
+<section id="galerie" style="background:var(--bone)">
+  <div class="wrap">
+    <h2 data-i18n="gal_title">Our Gallery</h2>
+    <p class="lead" data-i18n="gal_lead">See our firewood, our deliveries and our yard in pictures.</p>
+    <div class="gal-wrapper">
+      <div class="gal" id="gal">
+        <div class="gal-item"><img src="Alder.jpg" data-i18n-alt="gal_alt1" alt="Large pile of firewood" loading="lazy"></div>
+        <div class="gal-item"><img src="qwer.jpg" data-i18n-alt="gal_alt2" alt="Outdoor firewood stack" loading="lazy"></div>
+        <div class="gal-item"><img src="transport.jpg" data-i18n-alt="gal_alt3" alt="Firewood delivery truck" loading="lazy"></div>
+        <div class="gal-item"><img src="tester.jpg" data-i18n-alt="gal_alt4" alt="Firewood moisture meter" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section id="tarifs">
+  <div class="wrap">
+    <h2 data-i18n="price_title">Pricing per stere</h2>
+    <p class="lead" data-i18n="price_lead">Estimated prices, delivery not included. Choose the log length that works for you.</p>
+    
+    <div class="tarif-grid">
+      <div class="tarif-card">
+        <img src="qwer.jpg" data-i18n-alt="alt_25" alt="10 in (25 cm) logs" class="card-img">
+        <div class="card-title" data-i18n="len_25">10 in (25 cm)</div>
+        <div class="card-desc" data-i18n="desc_25">Small size, ideal for small stoves and compact inserts.</div>
+        <div class="card-price">$85 <span data-i18n="per_stere">/ stere</span></div>
+      </div>
+      
+      <div class="tarif-card featured">
+        <div class="badge" data-i18n="badge">Most popular</div>
+        <img src="oiu.jpg" data-i18n-alt="alt_33" alt="13 in (33 cm) logs" class="card-img">
+        <div class="card-title" data-i18n="len_33">13 in (33 cm)</div>
+        <div class="card-desc" data-i18n="desc_33">The most versatile size for most stoves and inserts.</div>
+        <div class="card-price">$80 <span data-i18n="per_stere">/ stere</span></div>
+      </div>
+
+      <div class="tarif-card">
+        <img src="buche4.jpg" data-i18n-alt="alt_40" alt="16 in (40 cm) logs" class="card-img">
+        <div class="card-title" data-i18n="len_40">16 in (40 cm)</div>
+        <div class="card-desc" data-i18n="desc_40">Ideal for large fireplaces and wider inserts.</div>
+        <div class="card-price">$84 <span data-i18n="per_stere">/ stere</span></div>
+      </div>
+
+      <div class="tarif-card">
+        <img src="buche5.jpg" data-i18n-alt="alt_50" alt="20 in (50 cm) logs" class="card-img">
+        <div class="card-title" data-i18n="len_50">20 in (50 cm)</div>
+        <div class="card-desc" data-i18n="desc_50">For large fireplaces or standard-size hearths.</div>
+        <div class="card-price">$75 <span data-i18n="per_stere">/ stere</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER SECTION -->
+<section id="commande" style="background:var(--bone)">
+  <div class="wrap">
+    <h2 data-i18n="order_title">Build my order</h2>
+    <p class="lead" data-i18n="order_lead">The price updates with every choice. One stere equals 1 m³ (about 35 cubic feet) of stacked logs.</p>
+    <div class="cmd">
+      <div class="panel">
+        <fieldset><legend data-i18n="legend_species">Species</legend><div class="opts" id="essences"></div></fieldset>
+        <fieldset><legend data-i18n="legend_length">Log length</legend><div class="opts" id="longueurs"></div></fieldset>
+        <fieldset><legend data-i18n="legend_zone">Delivery zone</legend><select id="zone"></select></fieldset>
+        <fieldset><legend data-i18n="legend_qty">Quantity (3 steres minimum)</legend>
+          <div class="qty"><button type="button" id="moins" data-i18n-aria-label="qty_remove" aria-label="Remove one stere">−</button><output id="qte" aria-live="polite">5</output><button type="button" id="plus" data-i18n-aria-label="qty_add" aria-label="Add one stere">+</button></div>
+        </fieldset>
+      </div>
+      
+      <aside class="panel recap" aria-live="polite">
+        <h3 data-i18n="recap_title">Your order</h3>
+        <dl>
+          <dt data-i18n="r_species">Species</dt><dd id="r-ess"></dd>
+          <dt data-i18n="r_length">Length</dt><dd id="r-lon"></dd>
+          <dt data-i18n="r_qty">Quantity</dt><dd id="r-qte"></dd>
+          <dt data-i18n="r_wood">Firewood</dt><dd id="r-bois"></dd>
+          <dt data-i18n="r_delivery">Delivery</dt><dd id="r-liv"></dd>
+        </dl>
+        <div class="total"><span data-i18n="total">Total</span><strong id="total"></strong></div>
+        
+        <form id="form">
+          <input type="text" id="nom" data-i18n-placeholder="ph_name" placeholder="Your name" required autocomplete="name">
+          <input type="tel" id="tel" data-i18n-placeholder="ph_tel" placeholder="Your phone number" required autocomplete="tel">
+          <textarea id="adr" rows="2" data-i18n-placeholder="ph_addr" placeholder="Delivery address" required></textarea>
+          
+          <button class="btn btn-whatsapp" type="submit">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px; vertical-align: middle;">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span data-i18n="btn_whatsapp">Complete on WhatsApp</span>
+          </button>
+        </form>
+        <p class="note" data-i18n="order_note">Your order opens in WhatsApp, ready to send with all the details. Payment on delivery.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <div class="wrap">
+    <h2 data-i18n="contact_title">Contact</h2>
+    <p class="lead" data-i18n="contact_lead">Questions about a species, a lead time or a large quantity? Drop us a line.</p>
+    <p style="margin-top:20px"><span data-i18n="contact_phone">Phone and WhatsApp:</span> <a href="tel:+15512941211">+1 (551) 294-1211</a><br><span data-i18n="contact_hours">Hours: Monday through Saturday, 8 a.m. – 6 p.m.</span></p>
+  </div>
+</section>
+</main>
+<footer>© <span id="an"></span> Garden State Firewood · <span data-i18n="footer_demo">Demo site</span></footer>
+
+<script src="lang.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
